@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    let videoUrl = "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        PlayerView(url: videoUrl)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
